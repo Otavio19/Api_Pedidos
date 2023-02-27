@@ -25,6 +25,7 @@ namespace Api_Pedidos
             services.AddDbContext<DataContext>(options => options.UseInMemoryDatabase("BDProdutos"));
             services.AddTransient<IProduto, ProdutoRepository>();
             services.AddTransient<IPedido, PedidoRepository>();
+            services.AddTransient<IEmpresa, EmpresaRepository>();
             services.AddSwaggerGen();
         }
 

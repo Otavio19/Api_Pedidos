@@ -25,7 +25,7 @@ namespace Api_Pedidos.Repository
 
         public List<Pedido> Read()
         {
-            return _context.Pedidos.ToList();
+            return _context.Pedidos.Include(p => p.product).ToList();
         }
 
         public void Create(Pedido pedido)
