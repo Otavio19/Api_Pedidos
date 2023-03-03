@@ -12,6 +12,7 @@ namespace Api_Pedidos.Repository
         public DataContext(DbContextOptions options):base(options){ }
         public DbSet<Produto> Produtos {get; set;}
         public DbSet<Pedido> Pedidos { get; set; }
-        public DbSet<Empresa> Empresas {get; set;}
+        public DbSet<Empresa> Empresa {get; set;}
+        public DbSet<Usuario> Usuarios {get; set;}
     }
 }

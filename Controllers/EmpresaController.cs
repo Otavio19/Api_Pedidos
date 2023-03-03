@@ -42,7 +42,7 @@ namespace Api_Pedidos.Controllers
         [HttpDelete("{id}")]
         public IActionResult Delete(string id, [FromServices] IEmpresa repository)
         {
-            repository.Delete(new Guid(id));
+            repository.Delete(Int32.Parse(id));
             return Ok();
         }
     }
