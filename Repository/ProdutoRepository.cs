@@ -9,13 +9,15 @@ namespace Api_Pedidos.Repository
 {
     public interface IProduto
     {
-        List<Produto> Read();
+        List<Produto> Read(int id);
 
         void Create(Produto protudo);
 
-        void Delete(Guid id);
+        void Delete(int id);
 
-        void Update(Guid id, Produto produto);
+        void Update(int id, Produto produto);
+
+        Produto GetById(int id);
     }
 
     public class ProdutoRepository : IProduto
@@ -28,12 +30,11 @@ namespace Api_Pedidos.Repository
 
         public void Create(Produto produto)
         {
-            produto.id = Guid.NewGuid();
             _context.Produtos.Add(produto);
             _context.SaveChanges();
         }
 
-        public void Delete(Guid id)
+        public void Delete(int id)
         {
             var produto = _context.Produtos.Find(id);
 
@@ -41,12 +42,19 @@ namespace Api_Pedidos.Repository
             _context.SaveChanges();
         }
 
-        public List<Produto> Read()
+        public List<Produto> Read(int id)
         {
-            return _context.Produtos.ToList();
+            return _context.Produtos.Where(p => p.empresa_id == id).ToList();
         }
 
-        public void Update(Guid id, Produto produto)
+        public Produto GetById(int id)
+        {
+            var _produto = _context.Produtos.Find(id);
+
+            return _produto;
+        }
+
+        public void Update(int id, Produto produto)
         {
             var _produto = _context.Produtos.Find(id);
 

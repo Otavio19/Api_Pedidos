@@ -78,7 +78,8 @@ namespace Api_Pedidos.Controllers
             var descriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(new Claim[]{
-                    new Claim(ClaimTypes.Name, usuario.Id.ToString())
+                    new Claim(ClaimTypes.NameIdentifier, usuario.Id.ToString()),
+                    new Claim("CompanyId", usuario.Empresa_id.ToString())
                 }),
 
                 Expires = DateTime.UtcNow.AddHours(5),

@@ -14,5 +14,6 @@ namespace Api_Pedidos.Repository
         public DbSet<Pedido> Pedidos { get; set; }
         public DbSet<Empresa> Empresa {get; set;}
         public DbSet<Usuario> Usuarios {get; set;}
+        public DbSet<Cliente> Clientes {get; set;}
     }
 }

@@ -11,7 +11,9 @@ namespace Api_Pedidos.Repository
     {
         List<Pedido> Read();
         void Create(Pedido pedido);
-        void Delete(Guid id);
+        void Delete(int id);
+        List<Pedido> GetByCompany(int id);
+        Pedido GetById(int id);
     }
 
     public class PedidoRepository : IPedido
@@ -28,17 +30,28 @@ namespace Api_Pedidos.Repository
             return _context.Pedidos.Include(p => p.product).ToList();
         }
 
+        public List<Pedido> GetByCompany(int id)
+        {
+            return _context.Pedidos.Where(pedido => pedido.empresa_id == id).Include(p => p.product).ToList();
+        }
+
+        public Pedido GetById(int id)
+        {
+            var _pedido = _context.Pedidos.Include(p => p.product).FirstOrDefault(p => p.id == id);
+
+            return _pedido!;
+        }
+
         public void Create(Pedido pedido)
         {
-            pedido.id = new Guid();
             _context.Pedidos.Add(pedido);
             _context.SaveChanges();
         }
 
-        public void Delete(Guid id)
+        public void Delete(int id)
         {
             var _pedido = _context.Pedidos.Find(id);
-            _context.Entry(_pedido).State = EntityState.Deleted;
+            _context.Entry(_pedido!).State = EntityState.Deleted;
             _context.SaveChanges();
         }
 

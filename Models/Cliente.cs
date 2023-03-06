@@ -7,16 +7,12 @@ using System.Threading.Tasks;
 
 namespace Api_Pedidos.Models
 {
-    public class Produto
+    public class Cliente
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int id { get; set; }
-        public int empresa_id { get; set; }
-        public int create_at { get; set; }
-        public string name { get; set; }
-        public bool active { get; set; }
-        public int amount { get; set; }
-        public decimal price { get; set; }
+        public int Id { get; set; }
+        public int Empresa_Id { get; set; }
+        public String Nome { get; set; }
     }
 }

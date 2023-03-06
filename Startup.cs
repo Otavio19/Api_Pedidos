@@ -46,6 +46,7 @@ namespace Api_Pedidos
             services.AddTransient<IPedido, PedidoRepository>();
             services.AddTransient<IEmpresa, EmpresaRepository>();
             services.AddTransient<IUsuario, UsuarioRepository>();
+            services.AddTransient<ICliente, ClienteRepository>();
             services.AddSwaggerGen();
         }
 

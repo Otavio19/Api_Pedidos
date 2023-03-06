@@ -40,14 +40,14 @@ namespace Api_Pedidos.Repository
         public void Delete(int id)
         {
             var empresa = _context.Empresa.Find(id);
-            _context.Empresa.Entry(empresa).State = EntityState.Deleted;
+            _context.Empresa.Entry(empresa!).State = EntityState.Deleted;
             _context.SaveChanges();
         }
 
         public void Update(Guid id, Empresa empresa)
         {
             var _empresa = _context.Empresa.Find(id);
-            _empresa.Name = empresa.Name;
+            _empresa!.Name = empresa.Name;
             
             _context.Empresa.Entry(_empresa).State = EntityState.Modified;
             _context.SaveChanges();
