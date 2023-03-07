@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EcLsIMceivOCJ4ZG071Bkdydrc/B8u1iWvEc0mnBXnu1GLkgMsBd+U6iowY+KZNIetPj5zrHP1EqRUY2Skg5ww==",
+  "dgSpecHash": "SUWCB4/vG4UAVcdH0v684k3rNV7NKO7oOGcSIeOA0bwA02O1AnZkAjL+dkqM2YyWLlcGHlBq/CvnU3XXGeFVfQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Otávio\\Downloads\\Api_Pedidos\\Api_Pedidos.csproj",
+  "projectFilePath": "C:\\Users\\Otávio\\Downloads\\Api_Pedidos\\Api_Pedidos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Otávio\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\Otávio\\.nuget\\packages\\google.protobuf\\3.11.4\\google.protobuf.3.11.4.nupkg.sha512",
@@ -64,8 +64,8 @@
     "C:\\Users\\Otávio\\.nuget\\packages\\mysql.data\\8.0.22\\mysql.data.8.0.22.nupkg.sha512",
     "C:\\Users\\Otávio\\.nuget\\packages\\mysql.data.entityframeworkcore\\8.0.22\\mysql.data.entityframeworkcore.8.0.22.nupkg.sha512",
     "C:\\Users\\Otávio\\.nuget\\packages\\netstandard.library\\1.6.0\\netstandard.library.1.6.0.nupkg.sha512",
-    "C:\\Users\\Otávio\\.nuget\\packages\\npgsql\\6.0.8\\npgsql.6.0.8.nupkg.sha512",
-    "C:\\Users\\Otávio\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\6.0.8\\npgsql.entityframeworkcore.postgresql.6.0.8.nupkg.sha512",
+    "C:\\Users\\Otávio\\.nuget\\packages\\npgsql\\7.0.2\\npgsql.7.0.2.nupkg.sha512",
+    "C:\\Users\\Otávio\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\7.0.3\\npgsql.entityframeworkcore.postgresql.7.0.3.nupkg.sha512",
     "C:\\Users\\Otávio\\.nuget\\packages\\runtime.native.system\\4.0.0\\runtime.native.system.4.0.0.nupkg.sha512",
     "C:\\Users\\Otávio\\.nuget\\packages\\runtime.native.system.io.compression\\4.1.0\\runtime.native.system.io.compression.4.1.0.nupkg.sha512",
     "C:\\Users\\Otávio\\.nuget\\packages\\runtime.native.system.net.http\\4.0.1\\runtime.native.system.net.http.4.0.1.nupkg.sha512",
