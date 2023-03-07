@@ -41,7 +41,30 @@ namespace Api_Pedidos
             
             services.AddEndpointsApiExplorer();
 
-            services.AddDbContext<DataContext>(options => options.UseInMemoryDatabase("BDTarefas"));
+            services.AddDbContext<DataContext>(options =>
+                {
+                    var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+
+                    string connStr;
+
+                    if (env == "Development")
+                    {
+                        options.UseInMemoryDatabase("BDTarefas");
+                    }
+                    else
+                    {
+                        var pgDb = Environment.GetEnvironmentVariable("PGDATABASE");
+                        var pgUser = Environment.GetEnvironmentVariable("PGUSER");
+                        var pgPass = Environment.GetEnvironmentVariable("PGPASSWORD");
+                        var pgHost = Environment.GetEnvironmentVariable("PGHOST");
+                        var pgPort = Environment.GetEnvironmentVariable("PGPORT");
+
+                        connStr = $"Server={pgHost};Port={pgPort};User Id={pgUser};Password={pgPass};Database={pgDb}; SSL Mode=Require; Trust Server Certificate=true";
+
+                        options.UseNpgsql(connStr);
+                    }
+                });
+                
             services.AddTransient<IProduto, ProdutoRepository>();
             services.AddTransient<IPedido, PedidoRepository>();
             services.AddTransient<IEmpresa, EmpresaRepository>();

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Otávio\\Downloads\\Api_Pedidos\\Api_Pedidos.csproj": {}
+    "c:\\Users\\Otávio\\Downloads\\Api_Pedidos\\Api_Pedidos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Otávio\\Downloads\\Api_Pedidos\\Api_Pedidos.csproj": {
+    "c:\\Users\\Otávio\\Downloads\\Api_Pedidos\\Api_Pedidos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Otávio\\Downloads\\Api_Pedidos\\Api_Pedidos.csproj",
+        "projectUniqueName": "c:\\Users\\Otávio\\Downloads\\Api_Pedidos\\Api_Pedidos.csproj",
         "projectName": "Api_Pedidos",
-        "projectPath": "C:\\Users\\Otávio\\Downloads\\Api_Pedidos\\Api_Pedidos.csproj",
+        "projectPath": "c:\\Users\\Otávio\\Downloads\\Api_Pedidos\\Api_Pedidos.csproj",
         "packagesPath": "C:\\Users\\Otávio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Otávio\\Downloads\\Api_Pedidos\\obj\\",
+        "outputPath": "c:\\Users\\Otávio\\Downloads\\Api_Pedidos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Otávio\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -67,6 +67,10 @@
             "MySql.Data.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.22, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.8, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
