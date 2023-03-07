@@ -77,3 +77,4 @@ C:\Users\Otávio\Downloads\Api_Pedidos\bin\Debug\net6.0\System.IdentityModel.Tok
 C:\Users\Otávio\Downloads\Api_Pedidos\bin\Debug\net6.0\System.Text.Encodings.Web.dll
 C:\Users\Otávio\Downloads\Api_Pedidos\bin\Debug\net6.0\System.Text.Json.dll
 C:\Users\Otávio\Downloads\Api_Pedidos\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Otávio\Downloads\Api_Pedidos\bin\Debug\net6.0\Api_Pedidos.staticwebassets.runtime.json

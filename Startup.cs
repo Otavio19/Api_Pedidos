@@ -59,11 +59,23 @@ namespace Api_Pedidos
                 }
 
             app.UseRouting();
+
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+
+            app.UseCors(builder =>
+            {
+                builder.AllowAnyHeader()
+                .AllowAnyMethod()
+                .AllowCredentials()
+                .WithOrigins("http://localhost:4200");
+            });
             
             app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints => endpoints.MapControllers());
+            app.MapFallbackToController("Index", "Fallback");
         }
     }
 }
