@@ -10,7 +10,7 @@ using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
 using System.Security.Claims;
 using System.Text;
-
+using System.Net;
 
 namespace Api_Pedidos.Controllers
 {
@@ -29,13 +29,13 @@ namespace Api_Pedidos.Controllers
         public IActionResult Login([FromBody] UsuarioLogin usuario, [FromServices]IUsuario repository)
         {
             if(!ModelState.IsValid)
-                return BadRequest();
+            return BadRequest();
 
             Usuario _usuario = repository.Login(usuario.Email, usuario.Senha);
 
             if(_usuario == null)
-                return Unauthorized();
-
+                return Unauthorized("Usuário não localizado");
+                
             _usuario.Senha = "";
             _usuario.Token = GenerateToken(_usuario);
 

@@ -12,7 +12,7 @@ namespace Api_Pedidos.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        public int Empresa_Id { get; set; }
-        public String Nome { get; set; }
+        public int Company_Id { get; set; }
+        public String Name { get; set; }
     }
 }

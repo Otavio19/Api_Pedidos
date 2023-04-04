@@ -11,12 +11,12 @@ namespace Api_Pedidos.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int id { get; set; }
-        public int empresa_id { get; set; }
-        public int create_at { get; set; }
-        public string name { get; set; }
-        public bool active { get; set; }
-        public int amount { get; set; }
-        public decimal price { get; set; }
+        public int Id { get; set; }
+        public int Company_id { get; set; }
+        public int Create_at { get; set; }
+        public string Name { get; set; }
+        public bool Active { get; set; } = false;
+        public int Amount { get; set; }
+        public decimal Price { get; set; }
     }
 }

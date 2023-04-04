@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SUWCB4/vG4UAVcdH0v684k3rNV7NKO7oOGcSIeOA0bwA02O1AnZkAjL+dkqM2YyWLlcGHlBq/CvnU3XXGeFVfQ==",
+  "dgSpecHash": "PU6nySldRAYGzzHP1Jr7bDSovARAqGsOdMlT9AEgHlyDTdd2Tr4OAqlRfB5JQoVGX3w+HL8iHEMAfvEZKdn2yQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Otávio\\Downloads\\Api_Pedidos\\Api_Pedidos.csproj",
+  "projectFilePath": "C:\\Users\\Otávio\\Desktop\\Projeto pedidos\\Api_Pedidos\\Api_Pedidos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Otávio\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\Otávio\\.nuget\\packages\\google.protobuf\\3.11.4\\google.protobuf.3.11.4.nupkg.sha512",

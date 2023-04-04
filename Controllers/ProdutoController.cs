@@ -37,7 +37,7 @@ namespace Api_Pedidos.Controllers
             if(!ModelState.IsValid)
                 return BadRequest();
 
-            model.empresa_id = int.Parse(User.FindFirst("CompanyId").Value);
+            model.Company_id = int.Parse(User.FindFirst("CompanyId").Value);
             produto.Create(model);
             return Ok();
         }

@@ -46,13 +46,13 @@ namespace Api_Pedidos.Repository
 
         public List<Cliente> Read(int id)
         {
-            return _context.Clientes.Where(cliente => cliente.Empresa_Id == id).ToList();
+            return _context.Clientes.Where(cliente => cliente.Company_Id == id).ToList();
         }
 
         public void Update(int id, Cliente cliente)
         {
             var _cliente = _context.Clientes.Find(id);
-            _cliente!.Nome = cliente.Nome;
+            _cliente!.Name = cliente.Name;
 
             _context.Clientes.Entry(_cliente).State = EntityState.Modified;
             _context.SaveChanges();

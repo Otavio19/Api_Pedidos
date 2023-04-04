@@ -27,7 +27,7 @@ namespace Api_Pedidos.Controllers
         {
             var companyId = int.Parse(User.FindFirst("CompanyId")!.Value);
             var cliente = repository.GetById(Int32.Parse(id));
-            if(cliente.Empresa_Id!= companyId)
+            if(cliente.Company_Id!= companyId)
                 return NotFound();
             
             return Ok(cliente);
@@ -40,7 +40,7 @@ namespace Api_Pedidos.Controllers
                 return BadRequest();
 
             var companyId = int.Parse(User.FindFirst("CompanyId")!.Value);
-            model.Empresa_Id = companyId;
+            model.Company_Id = companyId;
 
             repository.Create(model);
             return Ok();
@@ -59,7 +59,7 @@ namespace Api_Pedidos.Controllers
             var companyId = int.Parse(User.FindFirst("CompanyId")!.Value);
             var cliente = repository.GetById(Int32.Parse(id));
 
-            if(companyId != cliente.Empresa_Id)
+            if(companyId != cliente.Company_Id)
                 return NotFound();
 
             repository.Delete(Int32.Parse(id));

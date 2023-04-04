@@ -15,10 +15,10 @@ namespace Api_Pedidos.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
-        public int reponsavel_id { get; set; }
-        public int cliente_id { get; set; }
+        public string reponsavel_name { get; set; }
+        public string cliente_name { get; set; }
         public int empresa_id { get; set; }
-        public int created_at { get; set; }
+        public DateTime created_at { get; set; }
         public decimal price { get; set; }
         public List<ProdutoView> product { get; set; }
     }

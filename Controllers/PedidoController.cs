@@ -46,6 +46,7 @@ namespace Api_Pedidos.Controllers
                 return BadRequest();
 
             var companyId = int.Parse(User.FindFirst("CompanyId")!.Value);
+            model.created_at = DateTime.Now;
             model.empresa_id = companyId;
             pedido.Create(model);
             return Ok();

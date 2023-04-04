@@ -19,6 +19,13 @@ namespace Api_Pedidos.Controllers
             return Ok(_empresa);
         }
 
+        [HttpGet("{id}")]
+        public IActionResult GetById(string id, [FromServices] IEmpresa repository)
+        {
+            var empresa = repository.GetById(Int32.Parse(id));
+            return Ok(empresa);
+        }
+
         [HttpPost]
         public IActionResult Create([FromBody] Empresa empresa, [FromServices] IEmpresa repository)
         {

@@ -8016,11 +8016,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Otávio\\Downloads\\Api_Pedidos\\Api_Pedidos.csproj",
+      "projectUniqueName": "C:\\Users\\Otávio\\Desktop\\Projeto pedidos\\Api_Pedidos\\Api_Pedidos.csproj",
       "projectName": "Api_Pedidos",
-      "projectPath": "c:\\Users\\Otávio\\Downloads\\Api_Pedidos\\Api_Pedidos.csproj",
+      "projectPath": "C:\\Users\\Otávio\\Desktop\\Projeto pedidos\\Api_Pedidos\\Api_Pedidos.csproj",
       "packagesPath": "C:\\Users\\Otávio\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Otávio\\Downloads\\Api_Pedidos\\obj\\",
+      "outputPath": "C:\\Users\\Otávio\\Desktop\\Projeto pedidos\\Api_Pedidos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Otávio\\AppData\\Roaming\\NuGet\\NuGet.Config"

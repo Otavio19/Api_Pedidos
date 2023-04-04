@@ -11,6 +11,7 @@ namespace Api_Pedidos.Repository
     public interface IEmpresa
     {
         List <Empresa> Read();
+        Empresa GetById(int id);
         void Create(Empresa empresa);
         void Delete(int id);
         void Update(Guid id, Empresa empresa);
@@ -28,6 +29,12 @@ namespace Api_Pedidos.Repository
         public List<Empresa> Read()
         {
             return _context.Empresa.ToList();
+        }
+
+        public Empresa GetById(int id)
+        {
+            var empresa = _context.Empresa.Find(id);
+            return empresa;
         }
 
         public void Create(Empresa empresa)

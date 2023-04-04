@@ -44,7 +44,7 @@ namespace Api_Pedidos.Repository
 
         public List<Produto> Read(int id)
         {
-            return _context.Produtos.Where(p => p.empresa_id == id).ToList();
+            return _context.Produtos.Where(p => p.Company_id == id).ToList();
         }
 
         public Produto GetById(int id)
@@ -58,10 +58,10 @@ namespace Api_Pedidos.Repository
         {
             var _produto = _context.Produtos.Find(id);
 
-            _produto.name = produto.name;
-            _produto.active = produto.active;
-            _produto.amount = produto.amount;
-            _produto.price = produto.price;
+            _produto.Name = produto.Name;
+            _produto.Active = produto.Active;
+            _produto.Amount = produto.Amount;
+            _produto.Price = produto.Price;
 
             _context.Entry(_produto).State = EntityState.Modified;
             _context.SaveChanges();

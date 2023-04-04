@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Otávio\\Downloads\\Api_Pedidos\\Api_Pedidos.csproj": {}
+    "C:\\Users\\Otávio\\Desktop\\Projeto pedidos\\Api_Pedidos\\Api_Pedidos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Otávio\\Downloads\\Api_Pedidos\\Api_Pedidos.csproj": {
+    "C:\\Users\\Otávio\\Desktop\\Projeto pedidos\\Api_Pedidos\\Api_Pedidos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Otávio\\Downloads\\Api_Pedidos\\Api_Pedidos.csproj",
+        "projectUniqueName": "C:\\Users\\Otávio\\Desktop\\Projeto pedidos\\Api_Pedidos\\Api_Pedidos.csproj",
         "projectName": "Api_Pedidos",
-        "projectPath": "C:\\Users\\Otávio\\Downloads\\Api_Pedidos\\Api_Pedidos.csproj",
+        "projectPath": "C:\\Users\\Otávio\\Desktop\\Projeto pedidos\\Api_Pedidos\\Api_Pedidos.csproj",
         "packagesPath": "C:\\Users\\Otávio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Otávio\\Downloads\\Api_Pedidos\\obj\\",
+        "outputPath": "C:\\Users\\Otávio\\Desktop\\Projeto pedidos\\Api_Pedidos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Otávio\\AppData\\Roaming\\NuGet\\NuGet.Config"
